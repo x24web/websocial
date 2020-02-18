@@ -33,4 +33,12 @@ $(function () {
         autoplayHoverPause:true,
         nav:true
     })
+    $('.plan .head a i').click(function(e){
+        e.defaultprevented;
+        $(this).toggleClass('fa-arrow-circle-down');
+        $(this).parent().parent().parent().next().toggleClass('d-none')
+        $(this).toggleClass('fa-arrow-circle-up');
+        $(this).parent().parent().parent().next().toggleClass('d-block')
+    })
+
 })

@@ -137,6 +137,10 @@ body{
     padding: 120px 0px;
     .item{
         text-align: center;
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
         h3{
             font-weight: 800;
             padding: 22px 0px 12px;
@@ -151,7 +155,7 @@ body{
             padding: 0 16px;
             font-weight: 700;
         }
-        &.active{
+        &:hover{
             h3,i{
                 color: $color
             }
@@ -253,10 +257,13 @@ body{
                 width: 40%;
                 text-align: center;
                 background: $color;
-                color: #000;
                 border-radius: 50px;
                 margin: 20px auto 15px;
                 font-weight: 700;
+                a{
+                    color: #000;
+                    text-decoration: none;
+                }
             }
         }
         &:hover{
@@ -265,7 +272,7 @@ body{
         }
         &.active{
             border: 4px solid $color;
-            transform: scale(1.1);
+            transform: scale(1.05);
             &:hover{
                 transform: scale(1.1);
             }
@@ -709,7 +716,7 @@ footer{
                     color: $color;
                 }
                 .buy{
-                    min-width: 13%;
+                    min-width: 15%;
                     .price{
                         margin-bottom: 5px;
                         background: #fff;
@@ -1227,6 +1234,9 @@ footer{
     #all-services,#all-blog{
         .item{
             flex-direction: column;
+            .img{
+                margin-right: 0;
+            }
             .info{
                 h2{
                     margin-top: 15px;
@@ -1326,6 +1336,9 @@ footer{
     #all-services,#all-blog{
         .item{
             flex-direction: column;
+            .img{
+                margin-right: 0;
+            }
             .info{
                 h2{
                     margin-top: 15px;

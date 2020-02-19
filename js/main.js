@@ -29,7 +29,7 @@ $(function () {
         items: 1,
         loop:true,
         autoplay:true,
-        autoplayTimeout: 2500,
+        autoplayTimeout: 3400,
         autoplayHoverPause:true,
         nav:true
     })
@@ -40,5 +40,10 @@ $(function () {
         $(this).toggleClass('fa-arrow-circle-up');
         $(this).parent().parent().parent().next().toggleClass('d-block')
     })
-
+    wow = new WOW(
+        {
+            mobile:false,    
+        }
+    )
+    wow.init();
 })

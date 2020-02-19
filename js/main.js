@@ -40,10 +40,5 @@ $(function () {
         $(this).toggleClass('fa-arrow-circle-up');
         $(this).parent().parent().parent().next().toggleClass('d-block')
     })
-    wow = new WOW(
-        {
-            mobile:false,    
-        }
-    )
-    wow.init();
+    new WOW().init();
 })

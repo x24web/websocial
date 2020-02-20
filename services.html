@@ -73,7 +73,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id natus magnam ipsam inventore temporibus saepe totam harum, modi cupiditate voluptatem praesentium provident, sint maiores iure alias facere dolorem vitae at! Adipisci fugit non optio distinctio esse perspiciatis numquam eos excepturi nesciunt culpa! Tempore quod possimus ea accusamus maxime molestias doloribus, quas autem facilis ipsum voluptas.</p>
               <div class="control">
                 <button class="view"><a href="service.html">Read More</a></button>
-                <button class="price"><a href="#">Price Plan</a></button>
+                <button class="price"><a data-toggle="modal" data-target="#Price-1">Price Plan</a></button>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id natus magnam ipsam inventore temporibus saepe totam harum, modi cupiditate voluptatem praesentium provident, sint maiores iure alias facere dolorem vitae at! Adipisci fugit non optio distinctio esse perspiciatis numquam eos excepturi nesciunt culpa! Tempore quod possimus ea accusamus maxime molestias doloribus, quas autem facilis ipsum voluptas.</p>
               <div class="control">
                 <button class="view"><a href="service.html">Read More</a></button>
-                <button class="price"><a href="#">Price Plan</a></button>
+                <button class="price"><a data-toggle="modal" data-target="#Price-1">Price Plan</a></button>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id natus magnam ipsam inventore temporibus saepe totam harum, modi cupiditate voluptatem praesentium provident, sint maiores iure alias facere dolorem vitae at! Adipisci fugit non optio distinctio esse perspiciatis numquam eos excepturi nesciunt culpa! Tempore quod possimus ea accusamus maxime molestias doloribus, quas autem facilis ipsum voluptas.</p>
               <div class="control">
                 <button class="view"><a href="service.html">Read More</a></button>
-                <button class="price"><a href="#">Price Plan</a></button>
+                <button class="price"><a data-toggle="modal" data-target="#Price-1">Price Plan</a></button>
               </div>
             </div>
           </div>
@@ -154,6 +154,106 @@
     <div class="copyright"><p>Copyright recived by <span>LAVENUS</span></p></div>
   </footer>
   <!-- End Footer -->
+  <!-- POP UPS -->
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="Price-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Price-1">Marking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="plan">
+            <div class="item">
+              <div class="head">
+                <div class="container">
+                  <h3>Plan 1</h3>
+                  <a><i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+              </div>
+              <div class="container d-none">
+                <div class="info">
+                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, magnam reiciendis blanditiis voluptates omnis obcaecati debitis fugiat, veritatis a culpa provident nemo temporibus numquam id reprehenderit odit tempore pariatur harum.</p>
+                  <div class="buy">
+                    <button class="price">1000 LE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="head">
+                <div class="container">
+                  <h3>Plan 2</h3>
+                  <a><i class="fas fa-arrow-circle-down"></i></a>
+                </div>
+              </div>
+              <div class="container d-none">
+                <div class="info">
+                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, magnam reiciendis blanditiis voluptates omnis obcaecati debitis fugiat, veritatis a culpa provident nemo temporibus numquam id reprehenderit odit tempore pariatur harum.</p>
+                  <div class="buy">
+                    <button class="price">1000 LE</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-group">
+            <select class="custom-select">
+              <option selected value="1">Plan one</option>
+              <option value="2">Plan Two</option>
+              <option value="3">Plan Three</option>
+            </select>
+            <div class="input-group-append">
+              <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#confirm">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="confirm">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="Price-1">Confirm</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <h2 class="text-center">Marking: plan one</h2>
+            <h3 class="text-center">Total: <span>1000LE</span></h3>
+          </div>
+          <div class="contact-form pt-1">
+            <h2 class="title-section pb-1">Your <span>info</span></h2>
+            <form action="">
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Your Message..."></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn d-block mx-auto">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/jquery-3.4.1.slim.min.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

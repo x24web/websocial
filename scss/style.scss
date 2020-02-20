@@ -8,11 +8,15 @@ $color2: #2e2e2e;
         outline: 0 !important;
     }
 }
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,900&display=swap');
 body{
     font-family: 'Almarai', sans-serif;
     background: #000;
     color: #fff;
     overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Cairo', sans-serif;
 }
 .title-section{
     font-size: 3.5rem;
@@ -22,6 +26,25 @@ body{
     padding-bottom: 50px;
     span{
         color: $color;
+    }
+}
+.modal-content{
+    background: #000;
+    .modal-title{
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .close{
+        span{
+            color: #fff;
+        }
+    }
+    .plan .item .info{
+        flex-direction: column;
+        p{
+            text-align: center;
+            margin-bottom: 15px;
+        }
     }
 }
 .social-list{
@@ -359,49 +382,55 @@ body{
             margin: 0;
         }
     }
-    .contact-form{
-        background-color: rgb(0,0,0,0.7);
-        border-radius: 50px;
-        padding: 35px 35px 20px;
-        input,textarea{
+}
+.contact-form{
+    background-color: rgb(0,0,0,0.7);
+    border-radius: 50px;
+    padding: 35px 35px 20px;
+
+    input,textarea{
+        background: transparent;
+        border-width: 0px 0px 3px 0px;
+        border-color: $color;
+        border-radius: 0px;
+        color: $color;
+        font-weight: 700;
+        &[placeholder]{
+            padding: 0;
+            font-size: 20px;
+        }
+        &:focus{
+            box-shadow: 0 0 0 0rem rgba(247, 147, 30, 0.25) !important;
             background: transparent;
-            border-width: 0px 0px 3px 0px;
+        }
+    }
+    input:active{
+        border-width: 0px 0px 3px 0px;
+        border-color: $color;
+    }
+    textarea{
+        background-color: rgb(0,0,0,0.9);
+        font-size: 16px;
+        overflow-x: hidden;
+        border-width: 3px;
+        border-color: $color2;
+        border-radius: 10px;
+        &[placeholder]{
+            padding: 5px;
+            font-size: 18px;
+        }
+        &:focus{
             border-color: $color;
-            border-radius: 0px;
-            color: $color;
-            font-weight: 700;
-            &[placeholder]{
-                padding: 0;
-                font-size: 20px;
-            }
-            &:focus{
-                box-shadow: 0 0 0 0rem rgba(247, 147, 30, 0.25) !important;
-            }
         }
-        textarea{
-            background-color: rgb(0,0,0,0.9);
-            font-size: 16px;
-            overflow-x: hidden;
-            border-width: 3px;
-            border-color: $color2;
-            border-radius: 10px;
-            &[placeholder]{
-                padding: 5px;
-                font-size: 18px;
-            }
-            &:focus{
-                border-color: $color;
-            }
-        }
-        button{
-            background: $color;
-            font-weight: 700;
-            margin-top: 20px;
-            font-size: 19px;
-            border-radius: 50px;
-            background: $color;
-            padding: 7px 35px 6px 35px; 
-        }
+    }
+    button{
+        background: $color;
+        font-weight: 700;
+        margin-top: 20px;
+        font-size: 19px;
+        border-radius: 50px;
+        background: $color;
+        padding: 7px 35px 6px 35px; 
     }
 }
 /* Footer */
@@ -659,82 +688,82 @@ footer{
             font-weight: 700;
         }
     }
-    .plan{
-        .title{
-            color: $color;
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-        }
-        .item{
-            margin-bottom: 35px;
-            .head{
-                background: $color1;
-                .container{
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding-top: 5px;
-                    padding-bottom: 3px;
-                }
-                h3{
-                    color: #000;
-                    font-weight: 700;
-                    padding-left: 5px;
-                    margin-bottom: 0;
-                }
-                a{
-                    color: #000;
-                    font-size: 1.6rem;
-                    padding-right: 5px;
-                    cursor: pointer;
-                }
-            }
-            .info{
-                border: 3px solid #eee;
-                border-top: 0px;
-                padding: 20px 15px;
+}
+.plan{
+    .title{
+        color: $color;
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+    .item{
+        margin-bottom: 35px;
+        .head{
+            background: $color1;
+            .container{
                 display: flex;
+                justify-content: space-between;
                 align-items: center;
-                border-radius: 0px 0px 5px 5px;
-                .text{
-                    margin-bottom: 0;
-                    font-weight: 800;
-                    padding-right: 25px;
-                    color: $color;
+                padding-top: 5px;
+                padding-bottom: 3px;
+            }
+            h3{
+                color: #000;
+                font-weight: 700;
+                padding-left: 5px;
+                margin-bottom: 0;
+            }
+            a{
+                color: #000;
+                font-size: 1.6rem;
+                padding-right: 5px;
+                cursor: pointer;
+            }
+        }
+        .info{
+            border: 3px solid #eee;
+            border-top: 0px;
+            padding: 20px 15px;
+            display: flex;
+            align-items: center;
+            border-radius: 0px 0px 5px 5px;
+            .text{
+                margin-bottom: 0;
+                font-weight: 800;
+                padding-right: 25px;
+                color: $color;
+            }
+            .buy{
+                min-width: 15%;
+                .price{
+                    margin-bottom: 5px;
+                    background: #fff;
                 }
-                .buy{
-                    min-width: 15%;
-                    .price{
-                        margin-bottom: 5px;
-                        background: #fff;
-                    }
-                    button{
-                        width: 100%;
-                        border-radius: 8px;
-                        border: 0px;
-                        padding: 4px 10px 3px;
-                        font-weight: 800;
-                        background: $color;
-                    }
+                button{
+                    width: 100%;
+                    border-radius: 8px;
+                    border: 0px;
+                    padding: 4px 10px 3px;
+                    font-weight: 800;
+                    background: $color;
                 }
             }
         }
     }
-    .custom{
-        margin-bottom: 35px;
-        .flex-grow-1{
-            height: 5px;
-            background: $color;
-        }
-        button{
-            border-radius: 50px;
-            padding: 8px 45px;
-            font-size: 1.8rem;
-            border: 0;
-            background: $color;
-            font-weight: 700;
-        }
+}
+.custom{
+    margin-bottom: 35px;
+    .flex-grow-1{
+        height: 5px;
+        background: $color;
+    }
+    button{
+        border-radius: 50px;
+        padding: 8px 45px;
+        font-size: 1.8rem;
+        border: 0;
+        background: $color;
+        font-weight: 700;
     }
 }
 /* Blog Page */

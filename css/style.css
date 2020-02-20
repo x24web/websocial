@@ -1,4 +1,5 @@
 /* General */
+@import url("https://fonts.googleapis.com/css?family=Cairo:400,900&display=swap");
 * {
   outline: 0 !important;
 }
@@ -13,6 +14,10 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cairo", sans-serif;
+}
+
 .title-section {
   font-size: 3.5rem;
   font-weight: 700;
@@ -22,6 +27,24 @@ body {
 }
 .title-section span {
   color: #f7931e;
+}
+
+.modal-content {
+  background: #000;
+}
+.modal-content .modal-title {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.modal-content .close span {
+  color: #fff;
+}
+.modal-content .plan .item .info {
+  flex-direction: column;
+}
+.modal-content .plan .item .info p {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .social-list {
@@ -350,12 +373,13 @@ body {
   font-weight: 800;
   margin: 0;
 }
-#contact-section .contact-form {
+
+.contact-form {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 50px;
   padding: 35px 35px 20px;
 }
-#contact-section .contact-form input, #contact-section .contact-form textarea {
+.contact-form input, .contact-form textarea {
   background: transparent;
   border-width: 0px 0px 3px 0px;
   border-color: #f7931e;
@@ -363,14 +387,19 @@ body {
   color: #f7931e;
   font-weight: 700;
 }
-#contact-section .contact-form input[placeholder], #contact-section .contact-form textarea[placeholder] {
+.contact-form input[placeholder], .contact-form textarea[placeholder] {
   padding: 0;
   font-size: 20px;
 }
-#contact-section .contact-form input:focus, #contact-section .contact-form textarea:focus {
+.contact-form input:focus, .contact-form textarea:focus {
   box-shadow: 0 0 0 0rem rgba(247, 147, 30, 0.25) !important;
+  background: transparent;
 }
-#contact-section .contact-form textarea {
+.contact-form input:active {
+  border-width: 0px 0px 3px 0px;
+  border-color: #f7931e;
+}
+.contact-form textarea {
   background-color: rgba(0, 0, 0, 0.9);
   font-size: 16px;
   overflow-x: hidden;
@@ -378,14 +407,14 @@ body {
   border-color: #2e2e2e;
   border-radius: 10px;
 }
-#contact-section .contact-form textarea[placeholder] {
+.contact-form textarea[placeholder] {
   padding: 5px;
   font-size: 18px;
 }
-#contact-section .contact-form textarea:focus {
+.contact-form textarea:focus {
   border-color: #f7931e;
 }
-#contact-section .contact-form button {
+.contact-form button {
   background: #f7931e;
   font-weight: 700;
   margin-top: 20px;
@@ -645,38 +674,39 @@ footer .copyright p span {
   font-size: 1.1rem;
   font-weight: 700;
 }
-#server-page .plan .title {
+
+.plan .title {
   color: #f7931e;
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 15px;
 }
-#server-page .plan .item {
+.plan .item {
   margin-bottom: 35px;
 }
-#server-page .plan .item .head {
+.plan .item .head {
   background: #e87a13;
 }
-#server-page .plan .item .head .container {
+.plan .item .head .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 5px;
   padding-bottom: 3px;
 }
-#server-page .plan .item .head h3 {
+.plan .item .head h3 {
   color: #000;
   font-weight: 700;
   padding-left: 5px;
   margin-bottom: 0;
 }
-#server-page .plan .item .head a {
+.plan .item .head a {
   color: #000;
   font-size: 1.6rem;
   padding-right: 5px;
   cursor: pointer;
 }
-#server-page .plan .item .info {
+.plan .item .info {
   border: 3px solid #eee;
   border-top: 0px;
   padding: 20px 15px;
@@ -684,20 +714,20 @@ footer .copyright p span {
   align-items: center;
   border-radius: 0px 0px 5px 5px;
 }
-#server-page .plan .item .info .text {
+.plan .item .info .text {
   margin-bottom: 0;
   font-weight: 800;
   padding-right: 25px;
   color: #f7931e;
 }
-#server-page .plan .item .info .buy {
+.plan .item .info .buy {
   min-width: 15%;
 }
-#server-page .plan .item .info .buy .price {
+.plan .item .info .buy .price {
   margin-bottom: 5px;
   background: #fff;
 }
-#server-page .plan .item .info .buy button {
+.plan .item .info .buy button {
   width: 100%;
   border-radius: 8px;
   border: 0px;
@@ -705,14 +735,15 @@ footer .copyright p span {
   font-weight: 800;
   background: #f7931e;
 }
-#server-page .custom {
+
+.custom {
   margin-bottom: 35px;
 }
-#server-page .custom .flex-grow-1 {
+.custom .flex-grow-1 {
   height: 5px;
   background: #f7931e;
 }
-#server-page .custom button {
+.custom button {
   border-radius: 50px;
   padding: 8px 45px;
   font-size: 1.8rem;

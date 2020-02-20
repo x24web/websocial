@@ -46,6 +46,9 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-bottom: 15px;
 }
+.modal-content .plan .item .info .text {
+  padding-right: 0;
+}
 .modal-content .head a {
   display: flex;
   align-items: center;
@@ -1270,6 +1273,14 @@ footer .copyright p span {
 
   .customer-img .content .button-cus button {
     font-size: 1.5rem;
+  }
+
+  #all-services .col-lg-12 .item .control {
+    flex-direction: column;
+  }
+  #all-services .col-lg-12 .item .control button {
+    margin-right: 0;
+    margin-bottom: 8px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {

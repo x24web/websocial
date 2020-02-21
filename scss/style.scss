@@ -39,15 +39,62 @@ h1,h2,h3,h4,h5,h6{
             color: #fff;
         }
     }
-    .plan .item .info{
-        flex-direction: column;
-        p{
-            text-align: center;
-            margin-bottom: 15px;
-        }
-        .text{
-            padding-right: 0;
-        }
+    // .plan .item .info{
+    //     flex-direction: column;
+    //     p{
+    //         text-align: center;
+    //         margin-bottom: 15px;
+    //     }
+    //     .text{
+    //         padding-right: 0;
+    //     }
+    // }
+    .priceBox {
+        text-align: center;
+        letter-spacing: 0.5px;
+        border-radius: 5px;
+        padding: 40px 30px;
+        max-width: 350px;
+        margin: 25px auto;
+        box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.08);
+        background: #fff;
+    }
+    .priceBox .title {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 20px;
+    }
+    .priceBox .value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+    }
+    .priceBox .value span {
+    font-size: 60px;
+    }
+    .priceBox .list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 25px;
+    }
+    .priceBox .list li {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #111111;
+    }
+    .priceBox .footer a {
+    color: #ffffff;
+    background-color: #000;
+    border-color: #000;
+    border-radius: 100px;
+    }
+    .priceBox .footer a:hover {
+    border-color: #000;
+    color: #000;
+    background-color: transparent;
     }
     .head{
         a{

@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 3px solid #2e2e2e;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
   cursor: pointer;
 }
 .modal-content .customer-service .box .title {
@@ -131,7 +132,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   font-size: 1.3rem;
   font-weight: 700;
-  margin-top: 18px;
 }
 .modal-content .head a {
   display: flex;

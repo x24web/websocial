@@ -85,15 +85,16 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
 }
 .modal-content .collapse-service a {
-  background: #f7931e;
+  background: #fff;
   padding: 5px 14px;
   border-radius: 50px;
-  color: #000;
+  color: #e87a13;
   font-weight: 700;
   text-transform: capitalize;
 }
 .modal-content .collapse-service a.active {
-  background: #e65a09;
+  background: #e87a13;
+  color: #000;
 }
 .modal-content .customer-service {
   padding-top: 20px;
@@ -126,15 +127,20 @@ h1, h2, h3, h4, h5, h6 {
 .modal-content .customer-service .box.active {
   border: 3px solid #f7931e;
 }
-.modal-content .service-pop .confirm {
+.modal-content .service-pop .confirm, .modal-content .service-pop .submit {
   text-align: center;
 }
-.modal-content .service-pop .confirm button {
+.modal-content .service-pop .confirm button, .modal-content .service-pop .submit button {
   padding: 5px 40px;
   background: #e87a13;
   border: 0;
   border-radius: 50px;
   font-size: 1.3rem;
+  font-weight: 700;
+}
+.modal-content .service-pop .total {
+  font-size: 1.6rem;
+  text-align: center;
   font-weight: 700;
 }
 .modal-content .head a {

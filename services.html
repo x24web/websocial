@@ -123,7 +123,7 @@
         <div class="col-lg-6 d-lg-flex mx-auto">
           <div class="content wow slideInDown">
             <div class="button-cus">
-              <button><a href="#">Cutomer Your Plan</a></button>
+              <button><a data-toggle="modal" data-target="#customer">Cutomer Your Plan</a></button>
             </div>
             <p>Check this<span> up there</span></p>
           </div>
@@ -155,10 +155,9 @@
   </footer>
   <!-- End Footer -->
   <!-- POP UPS -->
-  <!-- Button trigger modal -->
   <!-- Modal -->
-  <div class="modal fade" id="Price-1">
-    <div class="modal-dialog">
+  <div class="modal fade bd-example-modal-lg" id="Price-1">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="Price-1">Marking</h5>
@@ -167,54 +166,190 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="plan">
-            <div class="item">
-              <div class="head">
-                <div class="container">
-                  <h3>Plan 1</h3>
-                  <a>
-                    <input type="checkbox">
-                    <i class="fas fa-arrow-circle-up"></i>
-                  </a>
+          <div class="service-pop">
+            <h2>Price Plan</h2>
+            <p class="d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias impedit dolorem officiis amet culpa explicabo saepe. Debitis, tempora hic?</p>
+            <div class="service">
+              <div class="row d-flex align-items-center mt-3">
+                <div class="col-lg-3">
+                  <h2>Plan 1</h2>
                 </div>
-              </div>
-              <div class="container d-block">
-                <div class="info">
-                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, magnam reiciendis blanditiis voluptates omnis obcaecati debitis fugiat, veritatis a culpa provident nemo temporibus numquam id reprehenderit odit tempore pariatur harum.</p>
-                  <div class="buy">
-                    <button class="price">1000 LE</button>
-                  </div>
+                <div class="col-lg-6">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem sit soluta quod et pariatur?</p>
+                </div>
+                <div class="col-lg-3">
+                  <h3>1000 EGP</h3>
+                  <button data-toggle="modal" data-target="#confirm">Buy now</button>
                 </div>
               </div>
             </div>
-            <div class="item">
-              <div class="head">
-                <div class="container">
-                  <h3>Plan 2</h3>
-                  <a>
-                    <input type="checkbox">
-                    <i class="fas fa-arrow-circle-up"></i>
-                  </a>
+            <div class="service">
+              <div class="row d-flex align-items-center mt-3">
+                <div class="col-lg-3">
+                  <h2>Plan 2</h2>
                 </div>
-              </div>
-              <div class="container d-block">
-                <div class="info">
-                  <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, magnam reiciendis blanditiis voluptates omnis obcaecati debitis fugiat, veritatis a culpa provident nemo temporibus numquam id reprehenderit odit tempore pariatur harum.</p>
-                  <div class="buy">
-                    <button class="price">1000 LE</button>
-                  </div>
+                <div class="col-lg-6">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt exercitationem sit soluta quod et pariatur?</p>
+                </div>
+                <div class="col-lg-3">
+                  <h3>1000 EGP</h3>
+                  <button data-toggle="modal" data-target="#confirm">Buy now</button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="input-group">
-            <button class="btn btn-success mx-auto" type="button" data-toggle="modal" data-target="#confirm">Buy</button>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Modal -->
+  <!-- Modal Customer -->
+  <div class="modal fade bd-example-modal-lg" id="customer">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Customer</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="service-pop">
+            <h2>chose one or more of our services</h2>
+            <p class="collapse-service">
+              <a class="btn active" data-target="#multiCollapseExample1">Marking</a>
+              <a class="btn" data-target="#multiCollapseExample2">Page Management</a>
+              <a class="btn" data-target="#multiCollapseExample3">Desgin</a>
+            </p>
+            <div class="row">
+              <div class="col-12 d-block">
+                <div class="" id="multiCollapseExample1">
+
+                  <div class="row customer-service">
+                    <div class="col-lg-4">
+                      <div class="box">
+                        <div>
+                          <h2 class="title">Plan 1</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sequi odit expedita cupiditate obcaecati eos temporibus distinctio blanditiis excepturi numquam!</p>
+                        </div>
+                        <p class="price">
+                          1000EGP
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="box">
+                        <div>
+                          <h2 class="title">Plan 2</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sequi odit expedita cupiditate obcaecati eos temporibus distinctio blanditiis excepturi numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, doloribus?</p>
+                        </div>
+                        <p class="price">
+                          1000EGP
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="box">
+                        <div>
+                          <h2 class="title">Plan 3</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sequi odit expedita cupiditate obcaecati eos temporibus distinctio blanditiis excepturi numquam!</p>
+                        </div>
+                        <p class="price">
+                          1000EGP
+                        </p>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+                
+              </div>
+              <div class="col-12 d-none">
+                <div class="" id="multiCollapseExample2">
+                  <div class="row customer-service">
+                    <div class="col-lg-4">
+                      <div class="box">
+                        <div>
+                          <h2 class="title">Plan 1</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sequi odit expedita cupiditate obcaecati eos temporibus distinctio blanditiis excepturi numquam!</p>
+                        </div>
+                        <p class="price">
+                          1000EGP
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="box">
+                        <div>
+                          <h2 class="title">Plan 2</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sequi odit expedita cupiditate obcaecati eos temporibus distinctio blanditiis excepturi numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, doloribus?</p>
+                        </div>
+                        <p class="price">
+                          1000EGP
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="box">
+                        <div>
+                          <h2 class="title">Plan 3</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sequi odit expedita cupiditate obcaecati eos temporibus distinctio blanditiis excepturi numquam!</p>
+                        </div>
+                        <p class="price">
+                          1000EGP
+                        </p>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+              <div class="col-12 d-none">
+                <div class="" id="multiCollapseExample3">
+                  <div class="row customer-service">
+                    <div class="col-lg-4">
+                      <div class="box">
+                        <div>
+                          <h2 class="title">Plan 1</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sequi odit expedita cupiditate obcaecati eos temporibus distinctio blanditiis excepturi numquam!</p>
+                        </div>
+                        <p class="price">
+                          1000EGP
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="box">
+                        <div>
+                          <h2 class="title">Plan 2</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sequi odit expedita cupiditate obcaecati eos temporibus distinctio blanditiis excepturi numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, doloribus?</p>
+                        </div>
+                        <p class="price">
+                          1000EGP
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="box">
+                        <div>
+                          <h2 class="title">Plan 3</h2>
+                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sequi odit expedita cupiditate obcaecati eos temporibus distinctio blanditiis excepturi numquam!</p>
+                        </div>
+                        <p class="price">
+                          1000EGP
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="confirm d-none">
+              <button data-toggle="modal" data-target="#confirm">Confirm</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Confirm -->
   <div class="modal fade" id="confirm">
     <div class="modal-dialog">
       <div class="modal-content">

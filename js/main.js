@@ -41,4 +41,37 @@ $(function () {
         $(this).parent().parent().parent().next().toggleClass('d-block')
     })
     new WOW().init();
+    // Service
+    var singlesevice = $('.modal-content .collapse-service a');
+    var dataTarget;
+    var elservice;
+    singlesevice.click(function(e){
+        if($(this).hasClass('active')){
+        }else{
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active')
+            dataTarget = $(this).data("target");
+            elservice = $(dataTarget).parent().addClass('d-block').removeClass('d-none');
+            elservice.siblings().addClass('d-none').removeClass('d-block');
+            }
+    })
+    // customer service 
+    var customer = $('.customer-service .box');
+    customer.click(function(e){
+        if(!$(this).hasClass('active')){
+            $(this).addClass('active');
+            if($('.customer-service .box.active').length == 0){
+                $('.service-pop .confirm').addClass('d-none').removeClass('d-block');
+            }else{
+                $('.service-pop .confirm').addClass('d-block').removeClass('d-none');
+            }
+        }else{
+            $(this).removeClass('active');
+            if($('.customer-service .box.active').length == 0){
+                $('.service-pop .confirm').addClass('d-none').removeClass('d-block');
+            }else{
+                $('.service-pop .confirm').addClass('d-block').removeClass('d-none');
+            }
+        }
+    })
 })

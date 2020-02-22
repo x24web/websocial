@@ -86,6 +86,63 @@ h1,h2,h3,h4,h5,h6{
             }
         }
     }
+    .collapse-service{
+        a{
+            background: $color;
+            padding: 5px 14px;
+            border-radius: 50px;
+            color: #000;
+            font-weight: 700;
+            text-transform: capitalize;
+            &.active{
+                background: #e65a09;
+            }
+        }
+    }
+    .customer-service{
+        padding-top: 20px;
+        .box{
+            text-align: center;
+            height: 100%;
+            padding: 10px 5px;
+            border: 3px solid $color2;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            .title{
+                color: $color1;
+                font-weight: 700;
+            }
+            p{
+                padding: 0 5px;
+                font-weight: 700;
+            }
+            .price{
+                color: $color1;
+                font-weight: 700;
+                font-size: 1.6rem;
+                margin-bottom: 0;
+                margin-top: auto;
+            }
+            &.active{
+                border: 3px solid $color;
+            }
+        }
+    }
+    .service-pop {
+        .confirm{
+            text-align: center;
+            button{
+                padding: 5px 40px;
+                background: $color1;
+                border: 0;
+                border-radius: 50px;
+                font-size: 1.3rem;
+                font-weight: 700;
+                margin-top: 18px;
+            }
+        }
+    }
     .head{
         a{
             display: flex;

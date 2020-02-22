@@ -39,62 +39,52 @@ h1,h2,h3,h4,h5,h6{
             color: #fff;
         }
     }
-    // .plan .item .info{
-    //     flex-direction: column;
-    //     p{
-    //         text-align: center;
-    //         margin-bottom: 15px;
-    //     }
-    //     .text{
-    //         padding-right: 0;
-    //     }
-    // }
-    .priceBox {
-        text-align: center;
-        letter-spacing: 0.5px;
-        border-radius: 5px;
-        padding: 40px 30px;
-        max-width: 350px;
-        margin: 25px auto;
-        box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.08);
-        background: #fff;
-    }
-    .priceBox .title {
-    color: #000;
-    font-size: 18px;
-    margin-bottom: 20px;
-    }
-    .priceBox .value {
-    font-size: 24px;
-    font-weight: 700;
-    color: #000;
-    margin-bottom: 15px;
-    }
-    .priceBox .value span {
-    font-size: 60px;
-    }
-    .priceBox .list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 25px;
-    }
-    .priceBox .list li {
-    padding: 5px 0;
-    font-size: 14px;
-    color: #111111;
-    }
-    .priceBox .footer a {
-    color: #ffffff;
-    background-color: #000;
-    border-color: #000;
-    border-radius: 100px;
-    }
-    .priceBox .footer a:hover {
-    border-color: #000;
-    color: #000;
-    background-color: transparent;
+    .service-pop{
+        &>h2{
+            font-size: 2.7rem;
+            text-align: center;
+            color: $color1;
+            font-weight: 700;
+        }
+        &>p{
+            font-weight: 700;
+            text-align: center;
+        }
+        .service{
+            h2{
+                font-size: 2.4rem;
+                font-weight: 700;
+                text-align: center;
+            }
+            p{
+                color: $color1;
+                font-weight: 700;
+                text-align: center;
+            }
+            .row{
+                div:last-child{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    align-self: baseline;
+                    h3{
+                        margin-bottom: 8px;
+                        color: $color1;
+                        font-weight: 800;
+                    }
+                    button{
+                        background: $color1;
+                        border: 0px;
+                        color: #000;
+                        font-size: 1rem;
+                        font-weight: 800;
+                        padding: 5px 15px;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
     }
     .head{
         a{
@@ -528,6 +518,7 @@ footer{
         justify-content: center;
         padding: 0;
         margin-top: 24px;
+        flex-wrap: wrap;
         li{
             float: left;
             margin: 0px 20px 0px;
@@ -1288,9 +1279,11 @@ footer{
     }
     /* Head Page */
     #head-page.style-one{
+        height: 65vh;
         h2{
             font-size: 3rem;
             text-align: center;
+            border: 0px;
         }
         .footer-head-page{
             display: none;
@@ -1500,3 +1493,15 @@ footer{
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {  }
+@media (max-width: 991.98px) { 
+    .service-pop{
+        .service{
+            .row{
+                div:last-child{
+                    flex-direction: row !important;
+                    justify-content: space-evenly !important;
+                }
+            }
+        }
+    }
+}
